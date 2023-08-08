@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en"> 
+    <head> 
+        <title>Bootstrap Example</title> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script 
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script
+        src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+        
+
+    </head> 
+    <body> 
+        <div class="container"> 
+            <h2>Student Form using JPDB</h2> 
+
+            <form id="empForm" method="get"> 
+
+
+                <div class="form-group"> 
+                    <span><label for="studId">Student Roll Number:</label> <label id="studIdMsg"> 
+                        </label></span> 
+                    <input type="text" class="form-control" name="studId" id="studId" 
+                           placeholder="Enter Student Roll Number" required onchange="getEmp()"> 
+                </div> 
+
+                <div class="form-group"> 
+                    <label for="studName">Student Name:</label>  	
+                    <input type="text" class="form-control" id="studName" 
+                           placeholder="Enter Student Name" name="studName"> 
+                </div> 
+
+
+                <div class="form-group"> 
+                    <label for="studclass">Student class</label>  	
+
+                    <input type="text" class="form-control" id="studclass" 
+                           placeholder="Enter Student class" name="studclass"> 
+                </div> 
+
+
+                <div class="form-group"> 
+                    <label for="studdob">Student Birth Date:</label>  	
+                    <input type="text" class="form-control" id="studdob" 
+                           placeholder="Enter Student DOB" name="studdob"> 
+                </div> 
+
+
+                <div class="form-group"> 
+                    <label for="studadd">Student Address:</label>  	
+                    <input type="text" class="form-control" id="studadd" 
+                           placeholder="Enter Employee da" name="studadd"> 
+                </div> 
+
+                <div class="form-group"> 
+                    <label for="studed">Student Enrollment Date:</label>  	
+                    <input type="text" class="form-control" id="studed" 
+                           placeholder="Enter Employee deduction" name="studed"> 
+                </div> 
+
+
+                <input type="button" class="btn btn-primary" id="save" value="Save" onclick="saveStudent()" />
+                <input type="button" class="btn btn-primary" id="change" value="change" onclick="changeStudent()" />
+                <input type="button" class="btn btn-primary" id="reset" value="Reset" onclick="resetForm()" />
+            </form> 
+        </div> 
+        
+</html>
+
